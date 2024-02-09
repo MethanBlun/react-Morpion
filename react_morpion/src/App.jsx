@@ -10,7 +10,10 @@ function App() {
 
   function handleClick() {
     setValue('X');
+    console.log('square clicked')
+    console.log(value)
   }
+ 
 
   return (
     <button
@@ -24,7 +27,12 @@ function App() {
  }   
 
   return (
+
     <div className='fragment'>
+
+      <div className='resetButton'><button onClick={() =>{
+        setValue(null)
+      }}>reset</button></div>
   <div className="board-row">
         <Square  />
         <Square  />
