@@ -7,12 +7,19 @@
 
 
 .fragment{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding-left: 50%
 } 
 
 .board-row{
 
   display: flex;
+}
+
+.status{
+  text-align: left;
 }
 
 
